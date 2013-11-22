@@ -1,54 +1,20 @@
-<!DOCTYPE html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>District 9</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/test.css">
-	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,700' rel='stylesheet' type='text/css'>
+<html lang="en">
 
-	<script type='text/javascript' src='assets/js/jquery-1.3.1.min.js'></script>
-	<script type='text/javascript' src='assets/js/slider.js'></script>
-	<script type="text/javascript" src="assets/js/jquery.scrollTo.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.color-RGBa-patch.js"></script>
-	
-	<script type='text/javascript' src='assets/js/pageMover.js'></script>
-</head>
+<?php $name="about"; ?>
+<?php include 'assets/includes/head.php'; ?>
 
 
 <body>
 	<div id="bg"><img src='assets/images/top-nav-test.jpg' alt='top image'/></div>
 
-	<dl class="accordion">
-		<dt><a href="index.html">Welcome</a></dt>
-		<dd><ul>
-			<li><a href='index.html'>Home</a></li>
-		</ul>	
-		</dd>
+	<?php include 'assets/includes/nav.php'; ?>
+	<script type="text/javascript">
 
-		<dt id='start'>About Movie</dt>
-		<dd id='current'><ul>
-			<li><a href='#item1' class='panel'>Plot</a></li>
-			<li><a href='#item2' class='panel'>Cast</a></li>
-			<li><a href='#item3' class='panel'>Themes</a></li>
-		</ul>
-		</dd>
-
-		<dt>Production</dt>
-		<dd><ul>
-			<li><a href='production.html#item1'>Development</a></li>
-			<li><a href='production.html#item2'>Filming</a></li>
-			<li><a href='production.html#item3'>Visual Effects</a></li>
-		</ul>
-		</dd>
-
-		<dt>Reception</dt>
-		<dd><ul>
-			<li><a href='reception.html#item1'>Profit</a></li>
-			<li><a href='reception.html#item2'>Reviews</a></li>
-			<li><a href='reception.html#item3'>Controversy</a></li>
-		</ul>
-		</dd>
-	</dl>
+	$('a.panel').click(function () {
+		$('#wrapper').scrollTo($(this).attr('href'), 800);	
+	});
+	
+	</script>
 	<div id="wrapper">
 	<div id="mask">
 

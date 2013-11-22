@@ -7,8 +7,9 @@
 
 	<script type='text/javascript' src='assets/js/jquery-1.3.1.min.js'></script>
 	<script type='text/javascript' src='assets/js/slider.js'></script>
-	<script type="text/javascript" src="assets/js/jquery.scrollTo.js"></script>
+	<script type='text/javascript' src='assets/js/jquery.scrollTo.js'></script>
 	<script type="text/javascript" src="assets/js/jquery.color-RGBa-patch.js"></script>
+	<script type='text/javascript' src='assets/js/pageMover.js'></script>
 	<script>
 	       $(document).ready(function(){
 	            $("#the_lights").fadeTo(1,0);

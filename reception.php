@@ -1,54 +1,14 @@
 <!DOCTYPE html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>District 9</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/test.css">
-	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,700' rel='stylesheet' type='text/css'>
+<html lang="en">
 
-	<script type='text/javascript' src='assets/js/jquery-1.3.1.min.js'></script>
-	<script type='text/javascript' src='assets/js/slider.js'></script>
-	<script type='text/javascript' src='assets/js/progressBars.js'></script>
-	<script type="text/javascript" src="assets/js/jquery.scrollTo.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.color-RGBa-patch.js"></script>
-	
-	<script type='text/javascript' src='assets/js/pageMover.js'></script>
-</head>
+<?php $name="reception"; ?>
+<?php include 'assets/includes/head.php'; ?>
 
 <body>
 	<div id="bg"><img src='assets/images/top-nav-test.jpg' alt='top nav image'/></div>
 
-	<dl class="accordion">
-		<dt><a id='no_slide' href="index.html">Welcome</a></dt>
-		<dd><ul>
-			<li><a href='index.html'>Home</a></li>
-		</ul>	
-		</dd>
+	<?php include 'assets/includes/nav.php'; ?>
 
-		<dt>About Movie</dt>
-		<dd><ul>
-			<li><a href='about.html#item1'>Plot</a></li>
-			<li><a href='about.html#item2'>Cast</a></li>
-			<li><a href='about.html#item3'>Themes</a></li>
-		</ul>
-		</dd>
-
-		<dt>Production</dt>
-		<dd><ul>
-			<li><a href='production.html#item1'>Development</a></li>
-			<li><a href='production.html#item2'>Filming</a></li>
-			<li><a href='production.html#item3'>Visual Effects</a></li>
-		</ul>
-		</dd>
-
-		<dt id='start' >Reception</dt>
-		<dd id='current'><ul>
-			<li><a href='#item1' class='panel'>Profit</a></li>
-			<li><a id='reviews' href='#item2' class='panel'>Reviews</a></li>
-			<li><a href='#item3' class='panel'>Controversy</a></li>
-		</ul>
-		</dd>
-	</dl>
 	<div id="wrapper">
 	<div id="mask">
 

@@ -1,42 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'head.php'; ?>
+<script> 
+	var hash = window.location.hash;
+	window.location.href = "nav.php?hash=" hash;
+</script>
+<?php $name="index"; ?>
+<?php include 'assets/includes/head.php'; ?>
 
-<body onload="init(files)">
+<body >
 	<div id="bg"><img src='assets/images/top-nav-test.jpg' alt='nav image!'/></div>
 
-	<dl class="accordion">
-		<dt id='start' ><a href="index.html">Welcome</a></dt>
-		<dd><ul>
-			<li><a style='background-color: white;' href='index.html'>Home</a></li>
-		</ul>	
-		</dd>
-
-		<dt><a href="">About Movie</a></dt>
-		<dd><ul>
-			<li><a href='about.php#item1'>Plot</a></li>
-			<li><a href='about.html#item2'>Cast</a></li>
-			<li><a href='about.html#item3'>Themes</a></li>
-		</ul>
-		</dd>
-
-		<dt><a href="">Production</a></dt>
-		<dd><ul>
-			<li><a href='production.html#item1'>Development</a></li>
-			<li><a href='production.html#item2'>Filming</a></li>
-			<li><a href='production.html#item3'>Visual Effects</a></li>
-		</ul>
-		</dd>
-
-		<dt><a href="">Reception</a></dt>
-		<dd><ul>
-			<li><a href='reception.html#item1'>Profit</a></li>
-			<li><a href='reception.html#item2'>Reviews</a></li>
-			<li><a href='reception.html#item3'>Controversy</a></li>
-		</ul>
-		</dd>
-	</dl>
+	<?php include 'assets/includes/nav.php'; ?>
 
 	<div id="wrapper">
 	<div id="mask">

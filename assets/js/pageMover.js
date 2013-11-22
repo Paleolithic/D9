@@ -21,7 +21,7 @@ $(document).ready(function() {
 		$(this).addClass('selected');
 		
 		current = $(this);
-
+		console.log('got here');
 		$('#wrapper').scrollTo($(this).attr('href'), 800);	
 		$('a.panel').css('background-color', 'rgba(0,0,0,0)');	
 		$(this).css('background-color', 'white');

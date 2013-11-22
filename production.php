@@ -1,57 +1,16 @@
 <!DOCTYPE html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>District 9</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/test.css">
-	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,700' rel='stylesheet' type='text/css'>
+<html lang="en">
 
-	<script type='text/javascript' src='assets/js/jquery-1.3.1.min.js'></script>
-	<script type='text/javascript' src='assets/js/slider.js'></script>
-	<script type="text/javascript" src="assets/js/jquery.scrollTo.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.color-RGBa-patch.js"></script>
-	
-	<script type='text/javascript' src='assets/js/pageMover.js'></script>
-</head>
+<?php $name="production"; ?>
+<?php include 'assets/includes/head.php'; ?>
 
 <body>
 	<div id="bg"><img src='assets/images/top-nav-test.jpg' alt='top nav image'/></div>
 
-	<dl class="accordion">
-		<dt><a id='no_slide' href="index.html">Welcome</a></dt>
-		<dd><ul>
-			<li><a href='index.html'>Home</a></li>
-		</ul>	
-		</dd>
-
-		<dt>About Movie</dt>
-		<dd><ul>
-			<li><a href='about.html#item1'>Plot</a></li>
-			<li><a href='about.html#item2'>Cast</a></li>
-			<li><a href='about.html#item3'>Themes</a></li>
-		</ul>
-		</dd>
-
-		<dt id='start' >Production</dt>
-		<dd id='current'><ul>
-			<li><a href='#item1' class='panel'>Development</a></li>
-			<li><a href='#item2' class='panel'>Filming</a></li>
-			<li><a href='#item3' class='panel'>Visual Effects</a></li>
-		</ul>
-		</dd>
-
-		<dt>Reception</dt>
-		<dd><ul>
-			<li><a href='reception.html#item1'>Profit</a></li>
-			<li><a href='reception.html#item2'>Reviews</a></li>
-			<li><a href='reception.html#item3'>Controversy</a></li>
-		</ul>
-		</dd>
-	</dl>
+	<?php include 'assets/includes/nav.php'; ?>
 
 	<div id="wrapper">
 	<div id="mask">
-
 		<div id="item1" style="background-color: rgba(39,35,48,.2);" class="item">
 			<div class="top">
 				<p id="title1">The &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  of District 9</p>
