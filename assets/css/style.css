@@ -2,20 +2,20 @@
 * https://kuler.adobe.com/Samsung-Mobile-1-color-theme-2891637/
 */
 
-body{
-	font-family: 'Titillium Web', sans-serif;	
-	margin: 0;
-	padding: 0;	
-}
-
 li{
 	list-style-type: none;
 }
 
 a{
 	text-decoration: none;
-	color: black;
 }
+a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
 
 /*
 * The bg id is used for setting the background image for the page
@@ -29,291 +29,83 @@ a{
 	height: 200%;
 	z-index: -100;
 }
-#bg img{
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	right: 0; 
-	bottom: 0; 
-	margin: auto; 
-	min-width: 50%;
-	min-height: 50%;
-}
-
-/*
-* The top class is used for setting up the title of the webpage
-*/
-.top{
-	margin:0;
-	padding: 0;
-	height: 80px;
-
-	font-weight: 700;
-	background-color: rgba(56,50,69,.75);
-}
-
-.top p{
-	
-	margin:0;
-	padding:0;
-	font-size: 72px;
-	height: 80px;
-	vertical-align: middle;
-	line-height: 100%;
-	overflow: hidden;
-
-}
-
-/* Two titles slightly misaligned gives the effect of a shadow */
-.top #title1{
-	position: fixed;
-	color: #E3E4D0;
-	left: 100px;
-	z-index: 2;
-}
-
-.top #title2{
-	position: fixed;
-	color: #878857;
-	left: 103px;
-	z-index: 1;
-}
-
-/*This is the div for use with the specific pages title (ie: "Visual Effects", "Filming")*/
-.top div{
-	margin:0;
-	padding:0;
-	font-size: 72px;
-	height: 80px;
-	vertical-align: middle;
-	line-height: 100%;
-	overflow: hidden;
-	position: relative;
-	left: 205px;
-	width: 480px;
-
-}
-
-.top div a{
-	color: white;
-}
-.top div p {
-	margin:0;
-	padding:0;
-	text-align: center;
-}
-
-/*This is used for setting up the accordion type of nav on the left*/
-.accordion{
-	position: absolute;
-	top: 25%;
-	width: 150px;
-	left: 25px;
-	z-index: 100;
-}
-
-.accordion dt {
-	background-color: #A41322;
-    cursor: pointer;
-
-}
-.accordion dt, .accordion dd {
-	padding: 5px;
-    font-family: inherit;
-	font-size: 1.17em;
-    border-bottom: 1px solid black;
-    &:last-of-type {
-        border-bottom: 1px solid black; 
+	#bg img{
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		right: 0; 
+		bottom: 0; 
+		margin: auto; 
+		min-width: 50%;
+		min-height: 50%;
 	}
-}
 
-.accordion dt a, .accordion dd a{
-	display: inline-block;
-    color: inherit;
-    font-size: 0.9em;
-    width: 100%;
-}
-
-.accordion #start{
-	background-color: #E01A2F;
-}
-.accordion dd {
-
-    border-top: 0; 
-    font-size: inherit;
-    text-align: justify;
-    margin: 0;
-
-    &:last-of-type {
-      border-top: 1px solid #815611;
-      position: relative;
-      top: -1px;
-	}
-}
-
-.accordion dd ul{
-	margin: 0;
-	padding: 0;
-}
-.accordion dd li{
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	border: 1px solid black;
-}
-
-.accordion dd a{
-	padding-left: 5px;
-	width: 96.5%;
-	height: 100%;
-}
-.accordion dd a:hover{
+#header{
+	position: fixed;
+	top: 0;
 	background-color: white;
+	z-index: 998;
+	width: 100%;
+	height: 64px;
+	border-bottom: 1px solid black;
+
 }
+	#header * {
+		color: black;
+	}
 
+	#header h1{
+		text-shadow: 2px 2px 1px #383245;
+	}
 
-/*Wrapper and mask are used for setting up the scrolling effect*/
-#wrapper {
+	#header #nav {
+		    margin: 20px 0 0 0;
+		}
+		 
+		#header #nav ul li {
+		    display: inline;
+		    margin: 0 20px 0 0;
+		}
+	
+#page-header{
+	position:fixed;
+	top: 100px;
+	background-color: white; 
+	z-index: 998;
+}
+	#page-header h2{
+		position: relative;
+		left: 6px;
+		top: 4px;
+
+	}
+
+#mask {
 	width:100%;
-	height:100%;
-	position:relative;
-	top:0;left:0;
+	height:400%;
 	margin: auto;
-	overflow:hidden;
-	
 }
 
-	#mask {
-		width:400%;
-		height:100%;
-	}
-
-	.item {
-		width:25%;
-		height:200%;
-		float:left;
+.item {
+	height:25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+	.item .title{
 		position: relative;
+		margin-bottom: 100px;
+		padding-top: 35px;
+		top: 4px;
+		z-index: 999;
 	}
 	
-	/*This is the class where almost everything goes, including information, the 
-	   cast pictures, etc
-	   */
-	.content {
-		width:50%;
-		top: 150px;
-		left: 3%;
-		margin:auto;
-		position:relative;
-		overflow: auto;
-		padding: 0 5px 0 5px;
-		position: relative;
-		display: block;
-		
-		background-color: #272330;
+	.item p{
 		color: white;
-		border: 5px solid #41505E ;
 	}
-	.clear {
+	/*.clear {
 		clear:both;
-	}
-
-	.content a{
-		color: white;
-		position:relative;
-
-	}
-
-	/*Left and right IDs are used for the cast picture placement*/
-	.content #left{
-		display: inline-block;
-		position: relative;
-		width: 46%;
-		left: 2%;
-	}
-
-
-	.content #right{
-		display: inline-block;
-		position: relative;
-		float: right;
-		width: 46%;
-		right: 2%;
-	}
-
-	/*Generic CSS for cast items*/
-	.content .cast{
-		padding: 5px;
-		position: relative;
-		display: block;
-
-		background-color: #272330;
-		color: white;
-		border: 5px solid #41505E ;		
-		
-	}
-
-	.content .cast img{
-		width: 30%;
-	}
-
-	/*Placement for cast item info*/
-	.content .cast .info{
-		position: relative;
-		width: 62%;
-		left: 5px;
-		
-		display: inline-block;
-		vertical-align: top;
-		margin: 0;
-		padding:0;		
-	}
-
-	/*Placement for different things within cast info*/
-	.content .cast h1, .content .cast p{
-		position: relative;
-		left: 5px;
-		line-height: 1;
-		width: 100%;
-		vertical-align: top;
-		margin: 0 0 5px 0;
-		padding:0;
-	}
-
-	.content .cast h1{
-		text-align: center;
-	}
-
-	.content .cast p{
-		vertical-align: middle;
-	}
-
-/*Progressbar CSS, used in conjunction with progressBar.js*/
-.progressBar {
-	width: 75%;
-	height: 30px;
-	border: 1px solid #111;
-	border-radius: 3px;
-	margin: 4px auto;
-	background-color:#41505E ;
-}
-
-/*Div within progress bar, this changes width and is the "progress" part of the bar*/
-.progressBar div {
-	height: 100%;
-	color: #fff;
-	text-align: left;
-	padding-left: 5px;
-
-	font-size: 12pt;
-	line-height: 30px; /* same as #progressBar height if we want text middle aligned */
-	width: 0;
-	background-color: #A41322;
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
-	position: relative;
-
-}
-
+	}*/
 
 /*This is a background for dimming for playing the youtube trailer*/
 #the_lights{
@@ -326,45 +118,144 @@ a{
   display:none;
 }
 
-/*This is everything that stands out when dimming for playing the youtube trailer*/
-#standout{
-    position:relative;
-    z-index:1000;
-}
+	/*This is everything that stands out when dimming for playing the youtube trailer*/
+	#standout{
+	    position:relative;
+	    z-index:1000;
+	}
+		/*Styling for the buttons to turn on/off the lights for dimming*/
+		#standout ul{
+			position: relative;
+			left: 15%;
+			width: 100%;
+			display: inline-block;
+		}
 
-/*Styling for the buttons to turn on/off the lights for dimming*/
-#standout ul{
-	position: relative;
-	left: 15%;
-	width: 100%;
-	display: inline-block;
-}
+		#standout li{
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			width: 170px;
+			background-color: #A41322;
+			text-align: center;
 
-#standout li{
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	width: 170px;
-	background-color: #A41322;
-	text-align: center;
+		}
+		#standout a{
+			position: relative;
+			cursor: pointer;
+		}
 
-}
-#standout a{
-	position: relative;
-	cursor: pointer;
-}
+	/**CSS for sign placement on main page*/
+	#sign{
+		position: absolute;
+		margin-top: 12%;
+		bottom: 0px;
+		left: 62%;
+		max-width: 100%;
+		max-height: 100%;
+		min-height: 25%;
+		z-index: -10;
+		overflow: hidden;
+		clear: all;
+	}
 
-/**CSS for sign placement on main page*/
-#sign{
+/**
+/*This is used for setting up the accordion type of nav on the left
+.accordion{
 	position: absolute;
-	margin-top: 12%;
-	bottom: 0px;
-	left: 58%;
-	max-width: 100%;
-	max-height: 100%;
-	min-height: 25%;
-	z-index: -10;
-	overflow: hidden;
-	clear: all;
+	top: 25%;
+	width: 150px;
+	left: 25px;
+	z-index: 100;
 }
+
+	.accordion dt {
+		background-color: #A41322;
+	    cursor: pointer;
+
+	}
+	.accordion dt, .accordion dd {
+		padding: 5px;
+	    font-family: inherit;
+		font-size: 1.17em;
+	    border-bottom: 1px solid black;
+	    &:last-of-type {
+	        border-bottom: 1px solid black; 
+		}
+	}
+
+	.accordion dt a, .accordion dd a{
+		display: inline-block;
+	    color: inherit;
+	    font-size: 0.9em;
+	    width: 100%;
+	}
+
+	.accordion #start{
+		background-color: #E01A2F;
+	}
+	.accordion dd {
+
+	    border-top: 0; 
+	    font-size: inherit;
+	    text-align: justify;
+	    margin: 0;
+
+	    &:last-of-type {
+	      border-top: 1px solid #815611;
+	      position: relative;
+	      top: -1px;
+		}
+	}
+
+	.accordion dd ul{
+		margin: 0;
+		padding: 0;
+	}
+	.accordion dd li{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: 1px solid black;
+	}
+
+	.accordion dd a{
+		padding-left: 5px;
+		width: 96.5%;
+		height: 100%;
+	}
+	.accordion dd a:hover{
+		background-color: white;
+	}
+
+
+
+
+/*Progressbar CSS, used in conjunction with progressBar.js
+.progressBar {
+	width: 75%;
+	height: 30px;
+	border: 1px solid #111;
+	border-radius: 3px;
+	margin: 4px auto;
+	background-color:#41505E ;
+}
+/*Div within progress bar, this changes width and is the "progress" part of the bar
+
+.progressBar div {
+		height: 100%;
+		color: #fff;
+		text-align: left;
+		padding-left: 5px;
+
+		font-size: 12pt;
+		line-height: 30px; /* same as #progressBar height if we want text middle aligned 
+		width: 0;
+		background-color: #A41322;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		position: relative;
+
+	}
+

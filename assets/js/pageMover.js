@@ -40,14 +40,14 @@ $(document).ready(function() {
 function resizePanel() {
 
 	width = $(window).width();
-	height = $(window).height();
+	height = $(window).height() - 65;
 
-	mask_width = width * $('.item').length;
+	mask_height = height * $('.item').length;
 		
-	$('#debug').html(width  + ' ' + height + ' ' + mask_width);
+	$('#debug').html(width  + ' ' + height + ' ' + mask_height);
 		
-	$('#wrapper, .item').css({width: width, height: height});
-	$('#mask').css({width: mask_width, height: height});
+	$('.item').css({width: width, height: height});
+	$('#mask').css({width: width, height: mask_height});
 	$('#wrapper').scrollTo($('a.selected').attr('href'), 0);
 		
 }
