@@ -1,4 +1,4 @@
-<div id="bg"><img src='assets/images/background.png' alt='nav image!'/></div>
+<!--div id="bg"><img src='assets/images/background.png' alt='nav image!'/></div-->
 <div id='header'>
 	<div class='container'>
 		<div class='five columns' >
@@ -8,8 +8,8 @@
 	    	<ul>
 		        <li><a href="index.php">Home</a></li>
 		        <li><a href="about.php">About</a></li>
-		        <li><a href="portfolio.php">Portfolio</a></li>
-		        <li><a href="contact.php">Contact</a></li>
+		        <li><a href="production.php">Production</a></li>
+		        <li><a href="reception.php">Reception</a></li>
 	    	</ul>
 	    </div>
 	</div>

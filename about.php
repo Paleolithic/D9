@@ -3,106 +3,13 @@
 
 <?php $name="about"; ?>
 <?php include 'assets/includes/head.php'; ?>
-
-<style>
-	/**
-	 * Parallax Scrolling Tutorial
-	 * For NetTuts+
-	 *  
-	 * Author: Mohiuddin Parekh
-	 *	http://www.mohi.me
-	 * 	@mohiuddinparekh   
-	 */
-
-
-	body{
-		margin:0;
-		padding:0;
-	}
-
-
-	#plot { 
-		background: url(assets/images/background.png) 50% 0 no-repeat fixed; 
-		height: 1000px;  
-		margin: 0 auto; 
-	    width: 100%; 
-	    max-width: 1920px; 
-	    position: relative; 
-	    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	}
-	#cast { 
-		background: url(assets/images/testhome.jpg) 50% 0 no-repeat fixed; 
-		height: 1000px;
-		margin: 0 auto; 
-	    width: 100%; 
-	    max-width: 1920px; 
-	    position: relative; 
-	    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	}
-
-	/* Introduction */
-
-	#plot article { 
-		background:  no-repeat scroll center top transparent; 
-		height: 458px; 
-		position: absolute; 
-		
-		top: 291px; 
-		width: 100%; 
-	}
-
-	#cast article { 
-		background:  no-repeat scroll center top transparent;
-		height: 458px;
-		position: absolute;
-		
-		top: 291px;
-		width: 100%; 
-	}
-
-</style>
-<script>
-	$(document).ready(function(){
-		// Cache the Window object
-		$window = $(window);
-	                
-	   $('section[data-type="background"]').each(function(){
-	     var $bgobj = $(this); // assigning the object
-	                    
-	      $(window).scroll(function() {
-	                    
-			// Scroll the background at var speed
-			// the yPos is a negative value because we're scrolling it UP!								
-			var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-			
-			// Put together our final background position
-			var coords = '50% '+ yPos + 'px';
-
-			// Move the background
-			$bgobj.css({ backgroundPosition: coords });
-			
-	}); // window scroll Ends
-
-	 });	
-
-	});
-</script>
 <body>
 	<?php include 'assets/includes/nav.php'; ?>
-	<div class='container'>
-		<div class='sixteen columns clearfix' id='page-header'>
-			<div class='three columns alpha'>
-				<h2>The</h2>
-			</div>
-			<div class='six columns offset-by-seven omega'>
-				<h2>of District 9</h2>
-			</div>	
-		</div> 
-	</div>
+	<?php include 'assets/includes/page_header.php'; ?>
 	<div id="mask">
-		<section data-speed="10" data-type="background" class='item' style='margin-top: 65px;' id="plot">
+		<section data-speed="10" data-type="background" class='item' style='margin-top: 65px;' id="one">
 			<div class='container'>
-				<div class='seven columns offset-by-three title' style='padding-top: 35px;'><h2><a href='#plot'>Plot</a></h2></div>
+				<div class='seven columns offset-by-three title' style='padding-top: 35px;'><h2><a href='#one'>Plot</a></h2></div>
 						
 	            <div class="fourteen columns offset-by-one">
 	            	<p>"Director Neill Blomkamp teams with producer Peter Jackson for this tale of extraterrestrial refugees stuck in contemporary South Africa. It's been 28 years	since the aliens made first contact, but there was never any attack from the skies,	nor	any profound technological revelation capable of advancing our society.	Instead, the aliens were treated as refugees. They were the last of their kind, and in order to accommodate them, the government of South Africa set up	a makeshift home in District 9 as politicians and world leaders debated how to	handle the situation. <br/><br/>As the humans begin to grow wary of the
@@ -118,9 +25,9 @@
 			</div>
 		</section>
 		
-		<section data-speed="4" data-type="background" class='item' id="cast">	
+		<section data-speed="4" data-type="background" class='item' id="two">	
 			<div class='container'>
-				<div class='seven columns offset-by-three title'><h2><a href='#cast'>Cast</a></h2></div>
+				<div class='seven columns offset-by-three title'><h2><a href='#two'>Cast</a></h2></div>
 						
 				<div class="eight columns clearfix">
 					<div class="three columns alpha">
@@ -161,9 +68,9 @@
 			</div>
 		</section>
 		
-		<section data-speed="4" data-type="background" class='item' id="themes" >
+		<section data-speed="6" data-type="background" class='item' id="three" >
 			<div class='container'>
-				<div class='seven columns offset-by-three title'><h2><a href='#themes'>Themes</a></h2></div>
+				<div class='seven columns offset-by-three title'><h2><a href='#three'>Themes</a></h2></div>
 				<!--img  src="assets/images/support_test.png"  style="position: relative; left: 175px;" alt="support" /-->
 
 
