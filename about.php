@@ -9,7 +9,7 @@
 	<div id="mask">
 		<section data-speed="10" data-type="background" class='item' style='margin-top: 65px;' id="one">
 			<div class='container'>
-				<div class='seven columns offset-by-three title' style='padding-top: 35px;'><h2><a href='#one'>Plot</a></h2></div>
+				<div class='seven columns offset-by-two title' style='padding-top: 35px;'><h2><a href='#one'>Plot</a></h2></div>
 						
 	            <div class="fourteen columns offset-by-one">
 	            	<p>"Director Neill Blomkamp teams with producer Peter Jackson for this tale of extraterrestrial refugees stuck in contemporary South Africa. It's been 28 years	since the aliens made first contact, but there was never any attack from the skies,	nor	any profound technological revelation capable of advancing our society.	Instead, the aliens were treated as refugees. They were the last of their kind, and in order to accommodate them, the government of South Africa set up	a makeshift home in District 9 as politicians and world leaders debated how to	handle the situation. <br/><br/>As the humans begin to grow wary of the
@@ -27,7 +27,7 @@
 		
 		<section data-speed="4" data-type="background" class='item' id="two">	
 			<div class='container'>
-				<div class='seven columns offset-by-three title'><h2><a href='#two'>Cast</a></h2></div>
+				<div class='seven columns offset-by-two title'><h2><a href='#two'>Cast</a></h2></div>
 						
 				<div class="eight columns clearfix">
 					<div class="three columns alpha">
@@ -70,7 +70,7 @@
 		
 		<section data-speed="6" data-type="background" class='item' id="three" >
 			<div class='container'>
-				<div class='seven columns offset-by-three title'><h2><a href='#three'>Themes</a></h2></div>
+				<div class='seven columns offset-by-two title'><h2><a href='#three'>Themes</a></h2></div>
 				<!--img  src="assets/images/support_test.png"  style="position: relative; left: 175px;" alt="support" /-->
 
 

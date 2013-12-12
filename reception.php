@@ -11,7 +11,7 @@
 
 		<section data-speed="10" data-type="background" class='item' style='margin-top: 65px;' id="one">
 			<div class='container'>
-				<div class='seven columns offset-by-three title' style='padding-top: 35px;'><h2><a href='#one'>Profit</a></h2></div>
+				<div class='seven columns offset-by-two title' style='padding-top: 35px;'><h2><a href='#one'>Profit</a></h2></div>
 						
 	            <div class="fourteen columns offset-by-one">
 				<p>District 9 has grossed over $210 million dollars, making 7 times the amount in which was put in it for production budget, at $30 million.
@@ -23,7 +23,7 @@
 		
 		<section data-speed="4" data-type="background" class='item' id="two">	
 			<div class='container'>
-				<div class='seven columns offset-by-three title'><h2><a href='#two'>Reviews</a></h2></div>	
+				<div class='seven columns offset-by-two title'><h2><a href='#two'>Reviews</a></h2></div>	
 				<div class="fourteen columns offset-by-one">		
 					<p>The film received critical acclaim. Rotten Tomatoes gave it a 90%, meaning it got positive reviews by 90% of reviewers, based on a sample of 261.. The website wrote of the consensus, "Technically brilliant and emotionally wrenching, District 9 has action, imagination, and all the elements of a thoroughly entertaining science-fiction classic." <br/><br/>Metacritic, another review aggregate website that assigns an average out of 100 from mainstream critics weighted District 9 at an 81 based on 36 reviews.<br/><br/>
 					The International Movies Database, IMDB, has rated District 9 an 8/10.<br/><br/>
@@ -41,7 +41,7 @@
 		
 		<section data-speed="6" data-type="background" class='item' id="three" >
 			<div class='container'>
-				<div class='seven columns offset-by-three title'><h2><a href='#three'>Controversy</a></h2></div>
+				<div class='seven columns offset-by-two title'><h2><a href='#three'>Controversy</a></h2></div>
 			<div class="fourteen columns offset-by-one">
 				<p>There was some controversy revolving around the use of Nigerians as cannibalistic criminals. At first, Nigeria's Information Minister Dora Akunyili simply asked movie theatres in Nigeria to edit out parts with references to Nigeria or to not show the movie at all. There were a series of letters sent to the director and producer of the movie from Nigerian officials and citizens alike complaining about the movie and calling it insulting. <br/> Eventually the film was forcefully banned instead of suggested to be banned in Nigeria, and the Nigerian Film and Video Censors Board was asked to prevent cinemas from showing the film and also to confiscate it.
 				<a href='http://en.wikipedia.org/wiki/District_9#Controversy' style='top: 0px; text-align: right; display: block; padding-right: 10px; color:#DFE0AF;'>Paraphrased from - Wikipedia</a></p>

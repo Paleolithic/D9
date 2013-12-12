@@ -42,6 +42,10 @@ a:hover{
 		    display: inline;
 		    margin: 0 20px 0 0;
 		}
+
+	#header #current{
+		text-decoration: underline;
+	}
 	
 #page-header{
 	position:fixed;

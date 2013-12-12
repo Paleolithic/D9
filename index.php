@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php $name="index"; ?>
+<?php $name="home"; ?>
 <?php include 'assets/includes/head.php'; ?>
 
 <body>
