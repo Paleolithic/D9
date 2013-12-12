@@ -10,6 +10,7 @@
 		        <li><a href="about.php" <?php if ($name=="about") echo " id='current'"; ?>>About</a></li>
 		        <li><a href="production.php" <?php if ($name=="production") echo " id='current'"; ?>>Production</a></li>
 		        <li><a href="reception.php" <?php if ($name=="reception") echo " id='current'"; ?>>Reception</a></li>
+		        <li><a href="comment.php" <?php if ($name=="comment") echo " id='current'"; ?>>Comment</a></li>
 	    	</ul>
 	    </div>
 	</div>

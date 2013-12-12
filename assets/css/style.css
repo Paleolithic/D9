@@ -97,9 +97,22 @@ a:hover{
 	#three{
 		background: url(../images/wikkus.jpg) 50% 0 no-repeat fixed;
 	}
-	/*.clear {
-		clear:both;
-	}*/
+
+form input, form textarea{
+	width: 100% !important;
+}
+
+form textarea{
+	max-height: 150px;
+}
+
+form label{
+	color: white;
+}
+	label span{
+		margin-left: 20px;
+		color: red;
+	}
 
 /*This is a background for dimming for playing the youtube trailer*/
 #the_lights{
