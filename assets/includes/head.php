@@ -9,9 +9,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,700' rel='stylesheet' type='text/css'>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><style type="text/css"></style>
-	<script type='text/javascript' src='assets/js/jquery.scrollTo.js'></script>
-	<script type="text/javascript" src="assets/js/jquery.color-RGBa-patch.js"></script>
-	<script type='text/javascript' src='assets/js/pageMover.js'></script>
+	<script type='text/javascript' src='assets/scripts/jquery.scrollTo.js'></script>
+	<script type="text/javascript" src="assets/scripts/jquery.color-RGBa-patch.js"></script>
+	<script type='text/javascript' src='assets/scripts/pageMover.js'></script>
 	<script>
        $(document).ready(function(){
 
