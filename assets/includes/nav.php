@@ -2,7 +2,7 @@
 <div id='header'>
 	<div class='container'>
 		<div class='five columns' >
-			<h1><a href='projects.html'>District 9</a></h1>
+			<h1><a href='index.php'>District 9</a></h1>
 		</div>
 		<div id="nav" class="eleven columns">
 	    	<ul>
@@ -11,6 +11,7 @@
 		        <li><a href="production.php" <?php if ($name=="production") echo " id='current'"; ?>>Production</a></li>
 		        <li><a href="reception.php" <?php if ($name=="reception") echo " id='current'"; ?>>Reception</a></li>
 		        <li><a href="comment.php" <?php if ($name=="comment") echo " id='current'"; ?>>Comment</a></li>
+		        <li><a href="annotated.css">Annotations</a></li>
 	    	</ul>
 	    </div>
 	</div>

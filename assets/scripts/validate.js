@@ -1,23 +1,3 @@
-function submitComment(){
-	if(validate() == true){
-		var nameToSend  = document.getElementById('nameInput').value;
-		var emailToSend = document.getElementById('emailInput').value;
-		var commentToSend  = document.getElementById('commentInput').value;
-		$.ajax({
-		  type: "POST",
-		  url: "assets/scripts/insert.php",
-		  data: {"name":nameToSend},
-		  data: {"email":emailToSend},
-		  data: {"comment":commentToSend},
-		});
-		console.log(nameToSend + " " + emailToSend + " " + commentToSend);
-		//document.getElementById('cmd_line_p_content').innerHTML = ("<p> >$~ " + value+"</p>" + document.getElementById("cmd_line_p_content").innerHTML);
-		//localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
-        //txtbox.value='';
-        //txtbox.focus();
-	}
-}
-
 function validate()
 {
 	var nppend = document.getElementById("name");
@@ -52,6 +32,5 @@ function validate()
 		x.appendChild(document.createTextNode("* Required Field"));
     	return false;
    }
-
    return( true );
 }

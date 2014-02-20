@@ -70,7 +70,6 @@ a:hover{
 	height:25%;
 	margin: 0 auto; 
     width: 100%; 
-    max-width: 1920px; 
     position: relative; 
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
@@ -98,6 +97,29 @@ a:hover{
 		background: url(../images/wikkus.jpg) 50% 0 no-repeat fixed;
 	}
 
+	#comments{
+		box-shadow: none !important;
+	}
+
+		#comments h2{
+			color: grey;
+		}
+
+		#actComment{
+			height: 150px;
+			max-height: 150px;
+			/*padding: 10px;*/
+		}
+			#actComment div{
+				background-color: grey;
+				padding: 10px;
+			}
+				#actComment div h3{
+					margin-bottom: 0;
+				}
+
+
+
 form input, form textarea{
 	width: 100% !important;
 }
@@ -114,55 +136,44 @@ form label{
 		color: red;
 	}
 
-/*This is a background for dimming for playing the youtube trailer*/
-#the_lights{
-  background-color:#000;
-  height:100%;
-  width:100%;
-  position:absolute;
-  top:0;
-  left:0;
-  display:none;
+
+/**CSS for sign placement on main page*/
+#sign{
+	position: absolute;
+	margin-top: 12%;
+	bottom: 0px;
+	left: 62%;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 25%;
+	z-index: 99;
+	overflow: hidden;
+	clear: all;
 }
 
-	/*This is everything that stands out when dimming for playing the youtube trailer*/
-	#standout{
-	    position:relative;
-	    z-index:1000;
-	}
-		/*Styling for the buttons to turn on/off the lights for dimming*/
-		#standout ul{
-			position: relative;
-			left: 15%;
-			width: 100%;
-			display: inline-block;
-		}
+/*Progressbar CSS, used in conjunction with progressBar.js*/
+.progressBar {
+	width: 75%;
+	height: 30px;
+	border: 1px solid #111;
+	border-radius: 3px;
+	margin: 4px auto;
+	background-color:#41505E ;
+}
 
-		#standout li{
-			display: inline-block;
-			margin-left: auto;
-			margin-right: auto;
-			position: relative;
-			width: 170px;
-			background-color: #A41322;
-			text-align: center;
+/*Div within progress bar, this changes width and is the "progress" part of the bar*/
+.progressBar div {
+	height: 100%;
+	color: #fff;
+	text-align: left;
+	padding-left: 5px;
 
-		}
-		#standout a{
-			position: relative;
-			cursor: pointer;
-		}
+	font-size: 12pt;
+	line-height: 30px; /* same as #progressBar height if we want text middle aligned */
+	width: 0;
+	background-color: #A41322;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	position: relative;
 
-	/**CSS for sign placement on main page*/
-	#sign{
-		position: absolute;
-		margin-top: 12%;
-		bottom: 0px;
-		left: 62%;
-		max-width: 100%;
-		max-height: 100%;
-		min-height: 25%;
-		z-index: -10;
-		overflow: hidden;
-		clear: all;
-	}
+}
