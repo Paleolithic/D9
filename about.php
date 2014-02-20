@@ -22,6 +22,9 @@
 					text-align: right; display: block; padding-right: 10px; color:#DFE0AF;'>Source
 					- Fandango</a></p>	
 				</div>
+				<div class="two columns offset-by-seven" style='margin-top: 60px;'>
+					<a href='#two'><img src='assets/images/down.png' alt='Down arrow'/></a>
+				</div>
 			</div>
 		</section>
 		
@@ -64,6 +67,10 @@
 						<h3>Sylvaine Strike</h3>
 						<p>Sharlto is a South African producer, actor, and director who has produced and co-directed short films which have appeared at the Cannes Film Festival, as well as commercials and music videos. He is best known for playing the roles of Wikus in the District 9.</p>
 					</div>
+				</div>
+
+				<div class="two columns offset-by-seven" style='margin-top: 60px;'>
+					<a href='#three'><img src='assets/images/down.png' alt='Down arrow'/></a>
 				</div>
 			</div>
 		</section>

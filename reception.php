@@ -3,20 +3,24 @@
 
 <?php $name="reception"; ?>
 <?php include 'assets/includes/head.php'; ?>
+<script type='text/javascript' src='assets/scripts/progressBars.js'></script>
 
 <body>
 	<?php include 'assets/includes/nav.php'; ?>
 	<?php include 'assets/includes/page_header.php'; ?>
 	<div id="mask">
-
 		<section data-speed="10" data-type="background" class='item' style='margin-top: 65px;' id="one">
 			<div class='container'>
 				<div class='seven columns offset-by-two title' style='padding-top: 35px;'><h2><a href='#one'>Profit</a></h2></div>
 						
 	            <div class="fourteen columns offset-by-one">
-				<p>District 9 has grossed over $210 million dollars, making 7 times the amount in which was put in it for production budget, at $30 million.
-				It opened on August 14, 2009 in the United States as well as Canada, and during its first weeking of airing it was ranked first in the weekend box office, holding an opening gross of $37,354,308. Comparing it to similar films that came out around the same time, District 9 did not have as large of a weekend audience as did Cloverfield which came out in 2008 and Startship Troopers which came out in 1997. The film stood out as a summer film that generated strong business despite little-known casting. Its opening success was attributed to the studio's unusual marketing campaign.<br/> In the film's second weekend, it dropped 49% in revenue while competing against the opening film Inglourious Basterds for the male audience, as Sony Pictures attributed the "good hold" to District 9's strong playability.
-				The film enjoyed similar success in the UK with an opening gross of £2,288,378.<a href='http://en.wikipedia.org/wiki/District_9#Box_office' style='top: 0px; text-align: right; display: block; padding-right: 10px; color:#DFE0AF;'>Paraphrased from - Wikipedia</a></p>
+					<p>District 9 has grossed over $210 million dollars, making 7 times the amount in which was put in it for production budget, at $30 million.
+					It opened on August 14, 2009 in the United States as well as Canada, and during its first weeking of airing it was ranked first in the weekend box office, holding an opening gross of $37,354,308. Comparing it to similar films that came out around the same time, District 9 did not have as large of a weekend audience as did Cloverfield which came out in 2008 and Startship Troopers which came out in 1997. The film stood out as a summer film that generated strong business despite little-known casting. Its opening success was attributed to the studio's unusual marketing campaign.<br/> In the film's second weekend, it dropped 49% in revenue while competing against the opening film Inglourious Basterds for the male audience, as Sony Pictures attributed the "good hold" to District 9's strong playability.
+					The film enjoyed similar success in the UK with an opening gross of £2,288,378.<a href='http://en.wikipedia.org/wiki/District_9#Box_office' style='top: 0px; text-align: right; display: block; padding-right: 10px; color:#DFE0AF;'>Paraphrased from - Wikipedia</a></p>
+				</div>
+				<div class="two columns offset-by-seven" style='margin-top: 60px;'>
+					<a href='#two' id='pb'><img src='assets/images/down.png' alt='Down arrow'/></a>
+				</div>
 			</div>
 
 		</section>
@@ -35,6 +39,9 @@
 						<div class="progressBar" id="imdb"><div></div></div>
 						<div class="progressBar" id="metacritic"><div></div></div>
 					</div>
+				</div>
+				<div class="two columns offset-by-seven" style='margin-top: 60px;'>
+					<a href='#three'><img src='assets/images/down.png' alt='Down arrow'/></a>
 				</div>
 			</div>
 		</section>

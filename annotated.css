@@ -1,0 +1,230 @@
+/*
+
+From project 2 I changed:
+
+Site style
+	- Instead of horizontal scrolling, scrolling is now done vertically
+	- Each section has its own background
+		- Parallax scrolling
+	- Nav
+		- Removed accordion nav, replaced with top of page nav
+	- Made use of Skeleton, a front end framework
+	- Works relatively well at different sizes
+
+PHP includes
+	- head.php - Include the head of the html file, which includes the CSS styles,
+		the javascript files, etc
+	- nav.php - Include for the nav of the file. Makes it easier to update the nav as 
+		needed across all files
+			- Takes in a parameter for the page name, applies "currPage" id to it
+				for styling
+	- page_header.php - Each page includes a fixed page header element
+	
+Comment page
+	- Added page with form to leave a comment and show other comments
+	- Adds comment to a database and retrieves database values
+
+Javascript functions
+	1) validate.js - Comment form validation on comment.php
+	2) validate.js - DHTML functionality in validate.js used on comment.php
+		- Adds "*required field" next to label if field invalid  
+		- While this isn't strictly in a different function than the validation,
+			I feel it still counts because it is not gratuitous addition to the site,
+			it adds a component telling the user they've made a mistake, which
+			adds value to the page and does not need a separate function from the validate
+			function.
+	3) progressBars.js - Was included in project two. This is a function that is used 
+		in reception.php to animate the progress bars for the "reviews" section.
+
+
+*/
+
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+#header{
+	position: fixed;
+	top: 0;
+	background-color: white;
+	z-index: 998;
+	width: 100%;
+	height: 64px;
+	border-bottom: 1px solid black;
+
+}
+	#header * {
+		color: black;
+	}
+
+	#header h1{
+		text-shadow: 2px 2px 1px #383245;
+	}
+
+	#header #nav {
+		    margin: 20px 0 0 0;
+		}
+		 
+		#header #nav ul li {
+		    display: inline;
+		    margin: 0 20px 0 0;
+		}
+
+	#header #current{
+		text-decoration: underline;
+	}
+	
+#page-header{
+	position:fixed;
+	top: 100px;
+	background-color: white; 
+	z-index: 998;
+}
+	#page-header h2{
+		position: relative;
+		left: 6px;
+		top: 4px;
+
+	}
+
+#mask {
+	width:100%;
+	height:400%;
+	margin: auto;
+}
+
+.item {
+	height:25%;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+	
+	.item .title{
+		position: relative;
+		margin-bottom: 100px;
+		padding-top: 35px;
+		top: 4px;
+		z-index: 999;
+	}
+	
+	.item p, .item h3{
+		color: white;
+	}
+
+	#one { 
+		background: url(../images/background.png) 50% 0 no-repeat fixed; 
+		background-size: cover;	    
+	}
+	#two { 
+		background: url(../images/prawn.jpg) 50% 0 no-repeat fixed;
+	}
+	#three{
+		background: url(../images/wikkus.jpg) 50% 0 no-repeat fixed;
+	}
+
+	#comments{
+		box-shadow: none !important;
+	}
+
+		#comments h2{
+			color: grey;
+		}
+
+		#actComment{
+			height: 150px;
+			/*padding: 10px;*/
+		}
+			#actComment div{
+				background-color: grey;
+				padding: 10px;
+			}
+				#actComment div h3{
+					margin-bottom: 0;
+				}
+
+
+
+form input, form textarea{
+	width: 100% !important;
+}
+
+form textarea{
+	max-height: 150px;
+}
+
+form label{
+	color: white;
+}
+	label span{
+		margin-left: 20px;
+		color: red;
+	}
+
+
+/**CSS for sign placement on main page*/
+#sign{
+	position: absolute;
+	margin-top: 12%;
+	bottom: 0px;
+	left: 62%;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 25%;
+	z-index: -10;
+	overflow: hidden;
+	clear: all;
+}
+
+
+/*This is a background for dimming for playing the youtube trailer*/
+/*#the_lights{
+  background-color:#000;
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+}
+
+	/*This is everything that stands out when dimming for playing the youtube trailer*/
+/*	#standout{
+	    position:relative;
+	    z-index:1000;
+	}
+		/*Styling for the buttons to turn on/off the lights for dimming*/
+/*		#standout ul{
+			position: relative;
+			left: 15%;
+			width: 100%;
+			display: inline-block;
+		}
+
+		#standout li{
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			width: 170px;
+			background-color: #A41322;
+			text-align: center;
+
+		}
+		#standout a{
+			position: relative;
+			cursor: pointer;
+		}
+*/

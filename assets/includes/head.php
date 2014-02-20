@@ -1,7 +1,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>District 9</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/test.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/skeleton.css">
@@ -13,12 +12,13 @@
 	<script type="text/javascript" src="assets/scripts/jquery.color-RGBa-patch.js"></script>
 	<script type='text/javascript' src='assets/scripts/pageMover.js'></script>
 	<script>
+	
        $(document).ready(function(){
 
 			// Cache the Window object
 			$window = $(window);
 			            
-			$('section[data-type="background"]').each(function(){
+			/*$('section[data-type="background"]').each(function(){
 			 var $bgobj = $(this); // assigning the object
 			                
 				$(window).scroll(function() {
@@ -35,8 +35,8 @@
 					
 				}); // window scroll Ends
 
-			 });	
-
+			 });*/	
+		
 
        		$(window).resize(function(){
 				$(".index").toggleClass("ten", $( window ).width() > 959);
@@ -97,7 +97,7 @@
 				}).resize();
 
 			});
-
+      		
 			$(function() {
 			  $('a[href*=#]:not([href=#])').click(function() {
 			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -112,7 +112,22 @@
 			    }
 			  });
 			});
-
+			resizePanel();
        });
+
+		function resizePanel() {
+
+			width = $(window).width();
+			height = $(window).height() - 65;
+
+			mask_height = height * $('.item').length;
+				
+			$('#debug').html(width  + ' ' + height + ' ' + mask_height);
+				
+			$('.item').css({width: width, height: height});
+			$('#mask').css({width: width, height: mask_height});
+			//$('#wrapper').scrollTo($('a.selected').attr('href'), 0);
+				
+		}
 	</script>	
 </head>
